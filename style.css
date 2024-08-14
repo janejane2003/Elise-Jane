@@ -1,0 +1,58 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #FFDDC1; /* Pastel peach color */
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+#birthday-message {
+    margin-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+#flower {
+    width: 50px; /* Start small */
+    margin: 20px auto;
+    display: block;
+    animation: grow 4s forwards; /* Animation to grow big */
+}
+
+@keyframes grow {
+    0% {
+        width: 50px; /* Initial small size */
+    }
+    100% {
+        width: 500px; /* Super big size */
+    }
+}
+
+#score-display {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #FF69B4; /* Light pink */
+}
+
+canvas {
+    background-color: #FDF5E6; /* Pastel beige color */
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #FFB6C1; /* Light pink border */
+}
+
+#countdown {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #FF69B4; /* Light pink */
+}
